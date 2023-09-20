@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <h1>Idade: <span id="idade">0</span></h1>
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="retirar()">Retirar</button>
+
+
+    <script>
+
+        var idade = 0;
+
+        function adicionar(){
+            idade = idade + 1;
+
+            atualizarIdade();
+        }
+        function retirar(){
+            idade = idade - 1;
+            atualizarIdade();
+        }
+
+        function atualizarIdade(){
+            var valorIdade = document.getElementById("idade");
+            valorIdade.textContent = idade;
+        }
+
+    </script>
+
+
+
+</body>
+</html>
